@@ -8,6 +8,7 @@ body {
 
 #container {
   margin: 16px auto;
+  user-select: none;
 }
 
 #board {
@@ -47,7 +48,6 @@ body {
 
 #btn {
   cursor: pointer;
-  user-select: none;
   background: #f44336;
   padding: 8px;
   border-radius: 5px;
