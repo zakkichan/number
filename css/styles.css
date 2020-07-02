@@ -13,7 +13,7 @@ body {
 
 #board {
   list-style: none;
-  margin: 50px 0 100px;
+  margin: 20px 0 30px;
   padding: 20px 30px;
   background: #fff;
   border-radius: 4px;
@@ -41,7 +41,7 @@ body {
 }
 
 #timer {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-align: right;
 }
 
