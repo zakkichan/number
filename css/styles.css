@@ -1,19 +1,19 @@
 body {
-  background: #ccc;
+  background: gray;
   color: #fff;
   font-family: 'Courier New', sans-serif;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 #container {
-  margin: 32px auto;
+  margin: 16px auto;
 }
 
 #board {
   list-style: none;
   margin: 0 0 16px;
-  padding: 20px;
+  padding: 20px 30px;
   background: #fff;
   border-radius: 4px;
   display: flex;
@@ -24,19 +24,19 @@ body {
   background: #00aaff;
   width: 80px;
   height: 80px;
-  margin: 10px;
+  margin: 8px;
   cursor: pointer;
   border-radius: 4px;
-  line-height: 40px;
+  line-height: 80px;
   text-align: center;
-  box-shadow: 0 4px 0 #0088cc;
+  box-shadow: 0 5px 0 #0088cc;
 }
 
 #board li.pressed {
-  background: #ccc;
+  background: gray;
   box-shadow: none;
-  margin-top: 9px;
-  margin-bottom: 1px;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
 #timer {
@@ -50,12 +50,12 @@ body {
   user-select: none;
   background: #f44336;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 5px;
   text-align: center;
-  box-shadow: 0 4px 0 #d1483e;
+  box-shadow: 0 5px 0 #d1483e;
 }
 
 #btn:active {
-  margin-top: 12px;
+  margin-top: 18px;
   box-shadow: none;
 }
