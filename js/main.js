@@ -25,7 +25,7 @@
         this.el.classList.add("pressed");
         this.game.addCurrentNum();
 
-        if (this.game.getCurrentNum() === this.game.getLevel() ** 2) {
+        if (this.game.getCurrentNum() === this.game.getLevel() ** 2 + 1) {
           clearTimeout(this.game.getTimeoutId());
         }
       }
@@ -36,7 +36,7 @@
     constructor(game) {
       this.game = game;
       this.panels = [];
-      for (let i = 0; i < this.game.getLevel() ** 2; i++) {
+      for (let i = 1; i < this.game.getLevel() ** 2 + 1; i++) {
         this.panels.push(new Panel(this.game));
       }
       this.setup();
@@ -51,7 +51,7 @@
 
     activate() {
       const nums = [];
-      for (let i = 0; i < this.game.getLevel() ** 2; i++) {
+      for (let i = 1; i < this.game.getLevel() ** 2 + 1; i++) {
         nums.push(i);
       }
 
@@ -83,7 +83,7 @@
     setup() {
       const container = document.getElementById("container");
       const PANEL_WIDTH = 100;
-      const BOARD_PADDING = 20;
+      const BOARD_PADDING = 25;
       container.style.width = PANEL_WIDTH * this.level + BOARD_PADDING * 2 + "px";
     }
 
@@ -92,7 +92,7 @@
         clearTimeout(this.timeoutId);
       }
   
-      this.currentNum = 0;
+      this.currentNum = 1;
       this.board.activate();
   
       this.startTime = Date.now();
